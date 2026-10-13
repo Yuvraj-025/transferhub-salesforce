@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Position__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Age__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Club_Name__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Market_Value__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Valuation_Date__c</field>
+    </columns>
+    <description>TransferHub fictional demonstration. Monetary values are GBP numeric fields, independent of the org INR currency.</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Fictional_Demo_Record__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>TH02 Top 10 Player Market Values GBP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>TH_Players__c</reportType>
+    <rowLimit>10</rowLimit>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact$Market_Value__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

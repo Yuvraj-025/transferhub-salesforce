@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>TH_Closed_Deals_Locked</fullName>
+  <active>true</active>
+  <errorConditionFormula>AND(Fictional_Demo_Record__c, AND(NOT(ISNEW()),NOT(ISPICKVAL(PRIORVALUE(Deal_Status__c),"Active")),$Profile.Name&lt;&gt;"System Administrator"))</errorConditionFormula>
+  <errorMessage>Closed deals can only be changed by users with the TransferHub closed-deal management permission.</errorMessage>
+</ValidationRule>

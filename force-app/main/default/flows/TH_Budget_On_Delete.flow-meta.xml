@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>TransferHub fictional demo only. Financial sums are GBP numbers. Native Flow has no Apex parent-row locking; restore/reconcile through the budget recalculation Flow.</description>
+    <environments>Default</environments>
+    <interviewLabel>TransferHub Maintain GBP Budget on Delete {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TransferHub Maintain GBP Budget on Delete</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Recalculate_Buyer</targetReference>
+        </connector>
+        <filterFormula>AND({!$Record.Fictional_Demo_Record__c}, NOT(ISBLANK({!$Record.AccountId})))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Recalculate_Buyer</name>
+        <label>Exclude deleting simulated deal</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>TH_Recalculate_Club_Budget</flowName>
+        <inputAssignments>
+            <name>ClubId</name>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>ExcludedDealId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

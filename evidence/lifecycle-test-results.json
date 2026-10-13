@@ -1,0 +1,21 @@
+{
+  "passed": 15,
+  "checks": [
+    "Active negotiation creates one follow-up",
+    "Follow-up due in two days",
+    "Active deal contributes zero spending",
+    "Completion recalculates club spending",
+    "Fee correction recalculates rather than increments",
+    "Former buyer spending repaired",
+    "New buyer receives completed spending",
+    "Unrelated save does not duplicate spending",
+    "Re-entering negotiation does not duplicate task",
+    "Reopened deal excluded from spending",
+    "Negative fee is rejected",
+    "Out-of-range scout rating is rejected",
+    "Deletion removes completed spending",
+    "Original demo spending remains intact",
+    "Ten recommended scout assessments"
+  ],
+  "totalGBP": 21800000
+}

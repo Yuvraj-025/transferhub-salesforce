@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Free_Agent_Signing__c</fullName>
+  <defaultValue>false</defaultValue>
+  <label>Free Agent Signing</label>
+  <type>Checkbox</type>
+</CustomField>

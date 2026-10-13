@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Deadline_State__c</fullName>
+  <formula>IF(NOT(ISPICKVAL(Deal_Status__c,"Active")),"Closed",IF(ISBLANK(Transfer_Deadline__c),"No Deadline",IF(Transfer_Deadline__c&lt;TODAY(),"Overdue",IF(Transfer_Deadline__c&lt;=TODAY()+7,"Due Within 7 Days","Upcoming"))))</formula>
+  <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+  <label>Deadline State</label>
+  <type>Text</type>
+</CustomField>

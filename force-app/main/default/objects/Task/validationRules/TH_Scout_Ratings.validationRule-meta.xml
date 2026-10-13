@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>TH_Scout_Ratings</fullName>
+  <active>true</active>
+  <errorConditionFormula>AND(Fictional_Demo_Record__c, NOT(ISBLANK(Report_External_ID__c)), OR(Technical_Rating__c&lt;1,Technical_Rating__c&gt;10,Physical_Rating__c&lt;1,Physical_Rating__c&gt;10,Mental_Rating__c&lt;1,Mental_Rating__c&gt;10,Potential_Rating__c&lt;1,Potential_Rating__c&gt;10))</errorConditionFormula>
+  <errorMessage>Scout ratings must be between 1 and 10.</errorMessage>
+</ValidationRule>

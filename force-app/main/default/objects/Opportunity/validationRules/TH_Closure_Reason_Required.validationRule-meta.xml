@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>TH_Closure_Reason_Required</fullName>
+  <active>true</active>
+  <errorConditionFormula>AND(Fictional_Demo_Record__c, AND(OR(ISPICKVAL(Deal_Status__c,"Rejected"),ISPICKVAL(Deal_Status__c,"Cancelled")),ISBLANK(Closure_Reason__c)))</errorConditionFormula>
+  <errorMessage>Enter a rejection or cancellation reason.</errorMessage>
+</ValidationRule>

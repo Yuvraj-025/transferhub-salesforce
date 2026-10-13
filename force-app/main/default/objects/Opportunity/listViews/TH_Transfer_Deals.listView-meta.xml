@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>TH_Transfer_Deals</fullName>
+  <columns>OPPORTUNITY.NAME</columns>
+  <columns>ACCOUNT.NAME</columns>
+  <columns>Deal_Status__c</columns>
+  <columns>Negotiation_Stage__c</columns>
+  <columns>Proposed_Transfer_Fee__c</columns>
+  <columns>Final_Transfer_Fee__c</columns>
+  <filterScope>Everything</filterScope>
+  <filters>
+    <field>Fictional_Demo_Record__c</field>
+    <operation>equals</operation>
+    <value>1</value>
+  </filters>
+  <label>TransferHub Transfer Deals</label>
+</ListView>

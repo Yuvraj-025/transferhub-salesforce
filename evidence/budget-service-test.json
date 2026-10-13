@@ -1,0 +1,45 @@
+{
+  "totalGBP": 21800000,
+  "clubs": [
+    {
+      "Name": "Northbridge FC",
+      "Current_Transfer_Spending__c": 0
+    },
+    {
+      "Name": "Harbour Athletic",
+      "Current_Transfer_Spending__c": 9100000
+    },
+    {
+      "Name": "Kingswell United",
+      "Current_Transfer_Spending__c": 0
+    },
+    {
+      "Name": "Westhaven City",
+      "Current_Transfer_Spending__c": 600000
+    },
+    {
+      "Name": "Riverton Rovers",
+      "Current_Transfer_Spending__c": 12100000
+    },
+    {
+      "Name": "Monteluce Calcio",
+      "Current_Transfer_Spending__c": 0
+    },
+    {
+      "Name": "Valdemar CF",
+      "Current_Transfer_Spending__c": 0
+    },
+    {
+      "Name": "Rheinburg SV",
+      "Current_Transfer_Spending__c": 0
+    },
+    {
+      "Name": "Bellemont FC",
+      "Current_Transfer_Spending__c": 0
+    },
+    {
+      "Name": "Dunewick Town",
+      "Current_Transfer_Spending__c": 0
+    }
+  ]
+}

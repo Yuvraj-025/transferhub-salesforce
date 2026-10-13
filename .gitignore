@@ -1,0 +1,18 @@
+# Salesforce authentication and local state
+.sf/
+.sfdx/
+.env
+.env.*
+!.env.example
+auth*.json
+auth*.cjs
+
+# Generated and machine-specific files
+node_modules/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db
+.deploy/
+

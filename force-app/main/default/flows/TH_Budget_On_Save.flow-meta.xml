@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Buyer_Changed</name>
+        <label>Did buying club change?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No former buyer</defaultConnectorLabel>
+        <rules>
+            <name>Changed_Buyer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.AccountId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.AccountId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.AccountId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Recalculate_Old_Buyer</targetReference>
+            </connector>
+            <label>Changed buyer</label>
+        </rules>
+    </decisions>
+    <description>TransferHub fictional demo only. Financial sums are GBP numbers. Native Flow has no Apex parent-row locking; restore/reconcile through the budget recalculation Flow.</description>
+    <environments>Default</environments>
+    <interviewLabel>TransferHub Maintain GBP Budget on Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TransferHub Maintain GBP Budget on Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Recalculate_Current_Buyer</targetReference>
+        </connector>
+        <filterFormula>AND(NOT(ISBLANK({!$Record.AccountId})), OR({!$Record.Fictional_Demo_Record__c}, {!$Record__Prior.Fictional_Demo_Record__c}))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Recalculate_Current_Buyer</name>
+        <label>Recalculate Current Buyer</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Buyer_Changed</targetReference>
+        </connector>
+        <flowName>TH_Recalculate_Club_Budget</flowName>
+        <inputAssignments>
+            <name>ClubId</name>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Recalculate_Old_Buyer</name>
+        <label>Recalculate Old Buyer</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>TH_Recalculate_Club_Budget</flowName>
+        <inputAssignments>
+            <name>ClubId</name>
+            <value>
+                <elementReference>$Record__Prior.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

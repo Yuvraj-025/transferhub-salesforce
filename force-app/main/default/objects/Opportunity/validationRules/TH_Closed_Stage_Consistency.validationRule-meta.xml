@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>TH_Closed_Stage_Consistency</fullName>
+  <active>true</active>
+  <errorConditionFormula>AND(Fictional_Demo_Record__c, OR(AND(ISPICKVAL(Deal_Status__c,"Active"),OR(ISPICKVAL(Negotiation_Stage__c,"Completed"),ISPICKVAL(Negotiation_Stage__c,"Rejected"),ISPICKVAL(Negotiation_Stage__c,"Cancelled"))),AND(NOT(ISPICKVAL(Deal_Status__c,"Active")),TEXT(Deal_Status__c)&lt;&gt;TEXT(Negotiation_Stage__c))))</errorConditionFormula>
+  <errorMessage>Closed status must match the terminal stage; Active requires an active stage.</errorMessage>
+</ValidationRule>

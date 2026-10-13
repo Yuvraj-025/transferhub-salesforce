@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Age__c</fullName>
+  <formula>IF(ISBLANK(Birthdate), NULL, YEAR(TODAY()) - YEAR(Birthdate) - IF(OR(MONTH(TODAY()) &lt; MONTH(Birthdate), AND(MONTH(TODAY()) = MONTH(Birthdate), DAY(TODAY()) &lt; DAY(Birthdate))), 1, 0))</formula>
+  <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+  <label>Age</label>
+  <precision>3</precision>
+  <scale>0</scale>
+  <type>Number</type>
+</CustomField>

@@ -1,0 +1,164 @@
+{
+  "verifiedOn": "2026-10-13",
+  "components": [
+    {
+      "report": "TH06_Players_by_Position",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "20",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "report": "TH08_Completed_Transfers",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "4",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "report": "TH04_Transfer_Spending_by_Club",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "2,18,00,000.00",
+          "value": 21800000
+        }
+      ]
+    },
+    {
+      "report": "TH05_Recommended_Scouting_Targets",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "73.00",
+          "value": 73
+        },
+        {
+          "label": "80",
+          "value": 80
+        },
+        {
+          "label": "10",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "report": "TH09_Deals_by_Status",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "15",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "report": "TH07_Transfer_Listed_Players",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "4",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "report": "TH03_Active_Transfer_Deals",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "2,10,00,000.00",
+          "value": 21000000
+        }
+      ]
+    },
+    {
+      "report": "TH03_Active_Transfer_Deals",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "8",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "report": "TH06_Players_by_Position",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "20",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "report": "TH03_Active_Transfer_Deals",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "8",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "report": "TH04_Transfer_Spending_by_Club",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "2,18,00,000.00",
+          "value": 21800000
+        }
+      ]
+    },
+    {
+      "report": "TH02_Top_Market_Values",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "255",
+          "value": 255
+        },
+        {
+          "label": "23,25,00,000.00",
+          "value": 232500000
+        },
+        {
+          "label": "10",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "report": "TH10_Upcoming_Deadlines",
+      "status": "DATA",
+      "error": null,
+      "totals": [
+        {
+          "label": "6",
+          "value": 6
+        }
+      ]
+    }
+  ]
+}

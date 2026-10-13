@@ -1,0 +1,103 @@
+{
+  "objects": {
+    "Club__c": "Account",
+    "Player__c": "Contact",
+    "Transfer_Deal__c": "Opportunity",
+    "Scout_Report__c": "Activity"
+  },
+  "fields": {
+    "Account": [
+      "Club_External_ID__c",
+      "Club_Notes__c",
+      "Club_Status__c",
+      "Contact_Email__c",
+      "Country__c",
+      "Current_Transfer_Spending__c",
+      "Estimated_Transfer_Budget__c",
+      "Fictional_Demo_Record__c",
+      "League__c",
+      "Recruitment_Priorities__c",
+      "Remaining_Transfer_Budget__c",
+      "Stadium__c"
+    ],
+    "Contact": [
+      "Age__c",
+      "Contract_Expiry__c",
+      "Fictional_Demo_Record__c",
+      "Height_cm__c",
+      "Jersey_Number__c",
+      "League__c",
+      "Market_Value__c",
+      "Nationality__c",
+      "Player_External_ID__c",
+      "Player_Profile_Notes__c",
+      "Player_Status__c",
+      "Position__c",
+      "Preferred_Foot__c",
+      "Transfer_Priority__c",
+      "Valuation_Date__c",
+      "Club_Name__c"
+    ],
+    "Opportunity": [
+      "Agent_Fee__c",
+      "Closure_Reason__c",
+      "Completion_Date__c",
+      "Contract_Duration_Months__c",
+      "Deadline_State__c",
+      "Deal_External_ID__c",
+      "Deal_Notes__c",
+      "Deal_Status__c",
+      "Deal_Type__c",
+      "Fictional_Demo_Record__c",
+      "Final_Transfer_Fee__c",
+      "Free_Agent_Signing__c",
+      "Loan_End_Date__c",
+      "Negotiation_Stage__c",
+      "Offer_Date__c",
+      "Player__c",
+      "Proposed_Transfer_Fee__c",
+      "Selling_Club__c",
+      "Transfer_Deadline__c",
+      "Buyer_Club_Name__c",
+      "Seller_Club_Name__c",
+      "Player_Name__c"
+    ],
+    "Activity": [
+      "Fictional_Demo_Record__c",
+      "Mental_Rating__c",
+      "Overall_Rating__c",
+      "Physical_Rating__c",
+      "Potential_Rating__c",
+      "Recommended__c",
+      "Recruitment_Recommendation__c",
+      "Report_Date__c",
+      "Report_External_ID__c",
+      "Scouting_Notes__c",
+      "Scout_Name__c",
+      "Strengths__c",
+      "Technical_Rating__c",
+      "Weaknesses__c"
+    ]
+  },
+  "formulas": [
+    "Account.Remaining_Transfer_Budget__c",
+    "Activity.Overall_Rating__c",
+    "Activity.Recommended__c",
+    "Contact.Age__c",
+    "Contact.Club_Name__c",
+    "Contact.League__c",
+    "Opportunity.Buyer_Club_Name__c",
+    "Opportunity.Deadline_State__c",
+    "Opportunity.Player_Name__c",
+    "Opportunity.Seller_Club_Name__c"
+  ],
+  "moneyGBP": [
+    "Account.Current_Transfer_Spending__c",
+    "Account.Estimated_Transfer_Budget__c",
+    "Account.Remaining_Transfer_Budget__c",
+    "Contact.Market_Value__c",
+    "Opportunity.Agent_Fee__c",
+    "Opportunity.Final_Transfer_Fee__c",
+    "Opportunity.Proposed_Transfer_Fee__c"
+  ]
+}

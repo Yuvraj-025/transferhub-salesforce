@@ -1,0 +1,11 @@
+Name,Club_External_ID__c,Country__c,League__c,Stadium__c,Estimated_Transfer_Budget__c,Club_Status__c,Contact_Email__c,Recruitment_Priorities__c,Club_Notes__c,Fictional_Demo_Record__c
+Northbridge FC,CLB-001,England,Premier League,Northbridge Ground,80000000,Active,recruitment1@example.com,Goalkeeper,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Harbour Athletic,CLB-002,England,Premier League,Harbour Ground,85000000,Active,recruitment2@example.com,Centre-Back,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Kingswell United,CLB-003,England,Premier League,Kingswell Ground,90000000,Active,recruitment3@example.com,Left-Back,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Westhaven City,CLB-004,England,Premier League,Westhaven Ground,95000000,Active,recruitment4@example.com,Right-Back,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Riverton Rovers,CLB-005,England,Premier League,Riverton Ground,100000000,Active,recruitment5@example.com,Defensive Midfielder,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Monteluce Calcio,CLB-006,Italy,Serie A,Monteluce Ground,105000000,Active,recruitment6@example.com,Central Midfielder,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Valdemar CF,CLB-007,Spain,La Liga,Valdemar Ground,110000000,Active,recruitment7@example.com,Attacking Midfielder,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Rheinburg SV,CLB-008,Germany,Bundesliga,Rheinburg Ground,115000000,Active,recruitment8@example.com,Left Winger,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Bellemont FC,CLB-009,France,Ligue 1,Bellemont Ground,120000000,Active,recruitment9@example.com,Right Winger,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true
+Dunewick Town,CLB-010,England,Championship,Dunewick Ground,125000000,Active,recruitment10@example.com,Striker,Fictional demonstration club. Budget covers all recorded demo deals; not a season-specific ledger.,true

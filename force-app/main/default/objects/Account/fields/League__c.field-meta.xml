@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>League__c</fullName>
+  <label>League</label>
+  <required>false</required>
+  <type>Picklist</type>
+  <valueSet>
+    <restricted>true</restricted>
+    <valueSetDefinition>
+      <sorted>false</sorted>
+      <value>
+        <fullName>Premier League</fullName>
+        <default>false</default>
+        <label>Premier League</label>
+      </value>
+      <value>
+        <fullName>La Liga</fullName>
+        <default>false</default>
+        <label>La Liga</label>
+      </value>
+      <value>
+        <fullName>Bundesliga</fullName>
+        <default>false</default>
+        <label>Bundesliga</label>
+      </value>
+      <value>
+        <fullName>Serie A</fullName>
+        <default>false</default>
+        <label>Serie A</label>
+      </value>
+      <value>
+        <fullName>Ligue 1</fullName>
+        <default>false</default>
+        <label>Ligue 1</label>
+      </value>
+      <value>
+        <fullName>Eredivisie</fullName>
+        <default>false</default>
+        <label>Eredivisie</label>
+      </value>
+      <value>
+        <fullName>Primeira Liga</fullName>
+        <default>false</default>
+        <label>Primeira Liga</label>
+      </value>
+      <value>
+        <fullName>Championship</fullName>
+        <default>false</default>
+        <label>Championship</label>
+      </value>
+      <value>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+      </value>
+    </valueSetDefinition>
+  </valueSet>
+</CustomField>
